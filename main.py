@@ -6,7 +6,8 @@ import lyricsgenius
 import random
 
 # Создаем объект бота и диспетчер
-bot = Bot(token="TOKEN")
+my_secret = os.environ['TOKEN']
+bot = Bot(token=my_secret)
 dp = Dispatcher(bot)
 
 count = 0  # win - player
